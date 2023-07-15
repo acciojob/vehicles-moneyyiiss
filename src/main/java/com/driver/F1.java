@@ -10,7 +10,7 @@ public class F1 extends Car {
         int newSpeed = getCurrentSpeed() + rate;
 
         if (newSpeed == 0) {
-            stop();
+            super.stop();
             changeGear(1);
         } else if (newSpeed >= 1 && newSpeed <= 50) {
             changeGear(1);
@@ -29,9 +29,5 @@ public class F1 extends Car {
         if (newSpeed > 0) {
             changeSpeed(newSpeed, getCurrentSpeed());
         }
-    }
-
-    private int getCurrentSpeed() {
-        return 0;
     }
 }
