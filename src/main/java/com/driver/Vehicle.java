@@ -6,9 +6,14 @@ public class Vehicle {
     private int currentSpeed;
     private int currentDirection;
 
+
     public Vehicle(String name) {
+        this.name = name;
         this.currentSpeed = 0;
         this.currentDirection = 0;
+    }
+    public String getName(){
+        return name;
     }
     public int getCurrentSpeed() {
         return currentSpeed;
