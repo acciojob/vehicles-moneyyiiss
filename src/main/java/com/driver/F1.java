@@ -27,7 +27,7 @@ public class F1 extends Car {
         }
 
         if (newSpeed > 0) {
-            changeSpeed(newSpeed, getCurrentSpeed());
+            changeSpeed(newSpeed, getCurrentDirection());
         }
     }
 }
